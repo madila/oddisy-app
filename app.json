@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "oddisy",
+    "slug": "oddisy",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
