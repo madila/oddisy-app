@@ -12,13 +12,13 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "description": "",
+    "description": "An application to manage your life journey",
     "ios": {
       "bundleIdentifier": "org.name.oddisy"
     },
     "splash": {
-      "image": "./assets/icon.png",
-      "backgroundColor": "#071821"
-    }
+      "backgroundColor": "#ffca24"
+    },
+    "githubUrl": "https://github.com/madila/oddisy-app"
   }
 }

@@ -4,7 +4,7 @@ import {Colors} from "./styles/constants/colors";
 import {styles} from "./styles/layout";
 import AppLoading from 'expo-app-loading';
 import {useFonts, Sora_400Regular, Sora_300Light, Sora_500Medium} from "@expo-google-fonts/sora";
-
+import { Feather } from '@expo/vector-icons';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MainNavigation from "./navigation/main";
@@ -22,7 +22,6 @@ const Tabs = () => {
                 headerShown: false,
                 tabBarLabelStyle: {
                     color: Colors.offBlack,
-                    textTransform: 'uppercase',
                     fontFamily: Fonts.medium,
                 },
                 tabBarActiveTintColor: Colors.offBlack,
@@ -30,7 +29,9 @@ const Tabs = () => {
                 tabBarActiveBackgroundColor: Colors.brightYellow,
                 tabBarInactiveBackgroundColor: Colors.yellow,
                 tabBarItemStyle: {
-                    borderRadius: 5
+                    borderRadius: 5,
+                    marginLeft: 5,
+                    marginRight: 5
                 },
                 tabBarStyle: {
                     backgroundColor: Colors.yellow,
@@ -46,19 +47,25 @@ const Tabs = () => {
             <Tab.Screen
                 options={{
                     tabBarLabel: 'Home',
-                    tabBarIcon: ({ color, size }) => (null),
+                    tabBarIcon: () => {
+                        return <Feather name="circle" size={18} color={Colors.offBlack} />
+                    },
                 }}
                 name="Home" component={HomeScreen}/>
             <Tab.Screen
                 options={{
                     tabBarLabel: 'Settings',
-                    tabBarIcon: ({ color, size }) => (null),
+                    tabBarIcon: () => {
+                        return <Feather name="settings" size={18} color={Colors.offBlack} />
+                    },
                 }}
                 name="Settings" component={SettingsScreen}/>
             <Tab.Screen
                 options={{
                     tabBarLabel: 'Tasks',
-                    tabBarIcon: ({ color, size }) => (null),
+                    tabBarIcon: () => {
+                        return <Feather name="check-circle" size={18} color={Colors.offBlack} />
+                    },
                 }}
                 name="Tasks" component={TaskScreen}/>
         </Tab.Navigator>
