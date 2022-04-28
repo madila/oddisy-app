@@ -2,9 +2,23 @@
   "expo": {
     "name": "oddisy",
     "slug": "oddisy",
+    "icon": "./icon.png",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "",
+    "ios": {
+      "bundleIdentifier": "org.name.oddisy"
+    },
+    "splash": {
+      "image": "./assets/icon.png",
+      "backgroundColor": "#071821"
+    }
   }
 }
