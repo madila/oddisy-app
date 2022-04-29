@@ -37,7 +37,6 @@ export default function PlaygroundScreen(props) {
             <Pressable
                 style={styles.buttonPrimary}
                 onPress={() => {
-                    console.log(randomWidth.value);
                     randomWidth.value = Math.random() * 350;
                 }}
             >
