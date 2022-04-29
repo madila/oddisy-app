@@ -1,5 +1,5 @@
 export const Fonts = {
-    regular: 'Sora_400Regular',
-    light: 'Sora_300Light',
-    medium: 'Sora_500Medium'
+    medium: 'BodoniModa_500Medium',
+    regular: 'BodoniModa_400Regular',
+    semibold: 'BodoniModa_600SemiBold'
 }

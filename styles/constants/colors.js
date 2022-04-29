@@ -1,6 +1,6 @@
 export const Colors = {
-    offBlack: 'rgb(10,10,10)',
-    yellow: 'rgb(234, 179, 8)',
-    brightYellow: '#ffca24',
+    offBlack: '#101010',
+    yellow: '#ffffff',
+    brightYellow: '#eeeeee',
     navy: '#071821'
 }
