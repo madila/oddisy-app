@@ -3,7 +3,7 @@ import React from 'react';
 import AppLoading from 'expo-app-loading';
 import {useFonts, BodoniModa_400Regular, BodoniModa_500Medium} from "@expo-google-fonts/bodoni-moda";
 import MainNavigation from "./navigation/main";
-import Tabs
+import Tabs from "./navigation/tabs";
 
 export default function App() {
 

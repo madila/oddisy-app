@@ -4,8 +4,9 @@ import Animated, {
     useAnimatedStyle,
     Easing,
 } from 'react-native-reanimated';
-import { View, Button } from 'react-native';
+import {View, Pressable, Text} from 'react-native';
 import React from 'react';
+import {styles} from "../styles/layout";
 
 export default function PlaygroundScreen(props) {
     const randomWidth = useSharedValue(10);
@@ -23,6 +24,7 @@ export default function PlaygroundScreen(props) {
 
     return (
         <View
+            {...props}
             style={{
                 flex: 1,
                 alignItems: 'center',
@@ -32,12 +34,15 @@ export default function PlaygroundScreen(props) {
             <Animated.View
                 style={[{ width: 100, height: 80, backgroundColor: 'black', margin: 30 }, style]}
             />
-            <Button
-                title="toggle"
+            <Pressable
+                style={styles.buttonPrimary}
                 onPress={() => {
+                    console.log(randomWidth.value);
                     randomWidth.value = Math.random() * 350;
                 }}
-            />
+            >
+                <Text style={styles.buttonTextPrimary}>Resize</Text>
+            </Pressable>
         </View>
     );
 }

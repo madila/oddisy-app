@@ -4,13 +4,13 @@ import {Fonts} from "../styles/constants/fonts";
 import {styles} from "../styles/layout";
 import {Feather} from "@expo/vector-icons";
 import HomeScreen from "../views/home";
-import SettingsScreen from "../views/settings";
 import TaskScreen from "../views/tasks";
+import PlaygroundScreen from "../views/playground";
 import React from "react";
 
 const Tab = createBottomTabNavigator();
 
-export default function Tabs(props) {
+const Tabs = (props) => {
     return (
         <Tab.Navigator
             {...props}
@@ -50,12 +50,12 @@ export default function Tabs(props) {
                 name="Home" component={HomeScreen}/>
             <Tab.Screen
                 options={{
-                    tabBarLabel: 'Settings',
+                    tabBarLabel: 'Playground',
                     tabBarIcon: () => {
                         return <Feather name="settings" size={18} color={Colors.offBlack} />
                     },
                 }}
-                name="Settings" component={SettingsScreen}/>
+                name="Playground" component={PlaygroundScreen}/>
             <Tab.Screen
                 options={{
                     tabBarLabel: 'Tasks',
@@ -67,3 +67,5 @@ export default function Tabs(props) {
         </Tab.Navigator>
     );
 }
+
+export default Tabs;
