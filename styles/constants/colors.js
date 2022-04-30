@@ -1,4 +1,5 @@
 export const Colors = {
+    card: '#eeeeee',
     offBlack: '#101010',
     yellow: '#ffffff',
     white: '#ffffff',

@@ -18,7 +18,6 @@ export default function App() {
         return (
             <MainNavigation>
                 <StatusBar style="auto"/>
-                <Tabs />
             </MainNavigation>
         );
     }

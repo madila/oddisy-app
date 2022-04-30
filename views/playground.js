@@ -4,11 +4,12 @@ import Animated, {
     useAnimatedStyle,
     Easing,
 } from 'react-native-reanimated';
-import {View, Pressable, Text} from 'react-native';
+import {View, Pressable, Text, Button} from 'react-native';
 import React from 'react';
 import {styles} from "../styles/layout";
+import {Colors} from "../styles/constants/colors";
 
-export default function PlaygroundScreen(props) {
+export default function PlaygroundScreen({navigation: {navigate}}) {
     const randomWidth = useSharedValue(10);
 
     const config = {
@@ -24,7 +25,6 @@ export default function PlaygroundScreen(props) {
 
     return (
         <View
-            {...props}
             style={{
                 flex: 1,
                 alignItems: 'center',
@@ -41,6 +41,7 @@ export default function PlaygroundScreen(props) {
                 }}
             >
                 <Text style={styles.buttonTextPrimary}>Resize</Text>
+                <Button color={Colors.navy} onPress={() => navigate('Tasks')} title="Open Menu" />
             </Pressable>
         </View>
     );
