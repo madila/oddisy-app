@@ -1,11 +1,10 @@
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import BottomDrawer from "./lap";
-import HomeScreen from "../views/home";
-import SettingsScreen from "../views/home";
-import PlaygroundScreen from "../views/playground";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {Animated} from "react-native";
-import TasksScreen from "../views/tasks";
+import SettingsScreen from "../views/settings";
+import Tabs from "../navigation/tabs";
+import WelcomeScreen from "../views/WelcomeScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -65,7 +64,7 @@ export default function MainNavigation({children}) {
                     presentation: 'card'
                 }}
             >
-                <Stack.Screen name="Home" component={HomeScreen}
+                <Stack.Screen name="Home" component={Tabs}
                               options={{
                                   cardStyleInterpolator: forSlide,
                                   gestureEnabled: true,
@@ -76,19 +75,8 @@ export default function MainNavigation({children}) {
                                   },
                               }}
                 />
-                <Stack.Screen name="Playground"
-                              component={PlaygroundScreen}
-                              options={{
-                                  cardStyleInterpolator: forSlide,
-                                  gestureEnabled: true,
-                                  animationEnabled: true,
-                                  transitionSpec: {
-                                      open: config,
-                                      close: config,
-                                  },
-                }} />
-                <Stack.Screen name="Tasks"
-                              component={TasksScreen}
+                <Stack.Screen name="Settings"
+                              component={SettingsScreen}
                               options={{
                                   cardStyleInterpolator: forSlide,
                                   gestureEnabled: true,

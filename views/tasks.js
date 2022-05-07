@@ -7,7 +7,7 @@ const TasksScreen = ({navigation: {navigate}}) => {
     return  <View
         style={styles.container}>
         <Text style={{color: Colors.offBlack, fontFamily: Fonts.regular, textAlign: 'center', fontSize: 30}}>Tasks</Text>
-        <Button color={Colors.navy} onPress={() => navigate('Home')} title="Open Menu" />
+        <Button color={Colors.navy} onPress={() => navigate('Settings')} title="Open Settings" />
     </View>
 }
 

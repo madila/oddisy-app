@@ -3,10 +3,10 @@ import {Colors} from "../styles/constants/colors";
 import {Fonts} from "../styles/constants/fonts";
 import {styles} from "../styles/layout";
 import {Feather} from "@expo/vector-icons";
-import HomeScreen from "../views/home";
 import TaskScreen from "../views/tasks";
 import PlaygroundScreen from "../views/playground";
 import React from "react";
+import HomeScreen from "../views/home";
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +38,7 @@ const Tabs = (props) => {
                     border: 0
                 }
             }}
-            sceneContainerStyle={styles.container}
+            sceneContainerStyle={styles.screenContainer}
         >
             <Tab.Screen
                 options={{

@@ -1,4 +1,5 @@
 import { registerRootComponent } from 'expo';
+global.__reanimatedWorkletInit = () => {};
 
 import App from './App';
 
