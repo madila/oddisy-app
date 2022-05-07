@@ -3,6 +3,7 @@ import {View, Pressable, Text, Button} from 'react-native';
 import React from 'react';
 import {styles} from "../styles/layout";
 import {Colors} from "../styles/constants/colors";
+import {Fonts} from "../styles/constants/fonts";
 
 export default function PlaygroundScreen({navigation: {navigate}}) {
 
@@ -14,10 +15,17 @@ export default function PlaygroundScreen({navigation: {navigate}}) {
                 justifyContent: 'center',
                 flexDirection: 'column',
             }}>
+            <Text style={{color: Colors.offBlack, fontFamily: Fonts.regular, textAlign: 'center', fontSize: 30}}>Tasks</Text>
             <View
-                style={{ width: 100, height: 100, borderRadius: 300, backgroundColor: Colors.grey, margin: 30 }}
-            />
-
+                style={{alignItems: 'center'}}
+            >
+                <Pressable
+                    style={styles.buttonPrimary}
+                    onPress={() => { navigate('Settings') }}
+                >
+                    <Text style={styles.buttonTextPrimary}>Settings</Text>
+                </Pressable>
+            </View>
         </View>
     );
 }

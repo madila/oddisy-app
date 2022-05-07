@@ -4,7 +4,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {Animated} from "react-native";
 import SettingsScreen from "../views/settings";
 import Tabs from "../navigation/tabs";
-import WelcomeScreen from "../views/WelcomeScreen";
 
 const Stack = createNativeStackNavigator();
 

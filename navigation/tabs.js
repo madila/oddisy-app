@@ -42,6 +42,14 @@ const Tabs = (props) => {
         >
             <Tab.Screen
                 options={{
+                    tabBarLabel: 'Today',
+                    tabBarIcon: () => {
+                        return <Feather name="settings" size={18} color={Colors.offBlack} />
+                    },
+                }}
+                name="Today" component={PlaygroundScreen}/>
+            <Tab.Screen
+                options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: () => {
                         return <Feather name="circle" size={18} color={Colors.offBlack} />
@@ -50,20 +58,12 @@ const Tabs = (props) => {
                 name="Home" component={HomeScreen}/>
             <Tab.Screen
                 options={{
-                    tabBarLabel: 'Playground',
-                    tabBarIcon: () => {
-                        return <Feather name="settings" size={18} color={Colors.offBlack} />
-                    },
-                }}
-                name="Playground" component={PlaygroundScreen}/>
-            <Tab.Screen
-                options={{
-                    tabBarLabel: 'Tasks',
+                    tabBarLabel: 'Journeys',
                     tabBarIcon: () => {
                         return <Feather name="check-circle" size={18} color={Colors.offBlack} />
                     },
                 }}
-                name="Tasks" component={TaskScreen}/>
+                name="Journeys" component={TaskScreen}/>
         </Tab.Navigator>
     );
 }
