@@ -3,7 +3,6 @@ import {Pressable, StyleSheet, Text, View} from "react-native";
 import {Colors} from "../styles/constants/colors";
 import {styles} from "../styles/layout";
 import {Fonts} from "../styles/constants/fonts";
-import { useWindowDimensions } from 'react-native';
 
 const SettingsScreen = ({navigation: {goBack}}) => {
     return <View

@@ -13,6 +13,7 @@
     "@expo-google-fonts/bodoni-moda": "^0.2.2",
     "@expo-google-fonts/inter": "^0.2.2",
     "@expo-google-fonts/sora": "^0.2.2",
+    "@expo/cli": "^0.1.4",
     "@expo/webpack-config": "~0.16.21",
     "@react-native-masked-view/masked-view": "0.2.6",
     "@react-navigation/bottom-tabs": "^6.3.1",
@@ -37,6 +38,7 @@
     "react-native-web": "0.17.7"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.17.10",
     "@babel/core": "^7.12.9",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.67.6",

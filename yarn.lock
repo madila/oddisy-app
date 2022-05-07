@@ -909,7 +909,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.16.7"
     "@babel/helper-plugin-utils" "^7.16.7"
 
-"@babel/preset-env@^7.12.9":
+"@babel/preset-env@^7.12.9", "@babel/preset-env@^7.17.10":
   version "7.17.10"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.17.10.tgz#a81b093669e3eb6541bb81a23173c5963c5de69c"
   integrity sha512-YNgyBHZQpeoBSRBg0xixsZzfT58Ze1iZrajvv0lJc70qDDGuGfonEnMGfWeSY0mQ3JTuCWFbMkzFRVafOyJx4g==
@@ -1101,7 +1101,7 @@
     mv "~2"
     safe-json-stringify "~1"
 
-"@expo/cli@0.1.4":
+"@expo/cli@0.1.4", "@expo/cli@^0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.1.4.tgz#1eebf652eabf0eca4b567d9f8bb6ab38d11a3051"
   integrity sha512-A9yq0+3ntqc7eNot4QfhAtAqx8bT50uleeQfTwhCiBPlArQ+zL2sHJVR5Vy79o80PJLQ0KoP3sxsCs1nkZ6rWw==
