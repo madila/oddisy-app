@@ -17,7 +17,7 @@
       "bundleIdentifier": "org.name.oddisy"
     },
     "splash": {
-      "backgroundColor": "#ffca24"
+      "backgroundColor": "#ffffff"
     },
     "githubUrl": "https://github.com/madila/oddisy-app"
   }

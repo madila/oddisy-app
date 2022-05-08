@@ -63,7 +63,7 @@ export default function MainNavigation({children}) {
                     presentation: 'card'
                 }}
             >
-                <Stack.Screen name="Home" component={Tabs}
+                <Stack.Screen name="Welcome" component={Tabs}
                               options={{
                                   cardStyleInterpolator: forSlide,
                                   gestureEnabled: true,

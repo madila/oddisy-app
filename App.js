@@ -5,7 +5,7 @@ import MainNavigation from "./navigation/main";
 import * as SplashScreen from "expo-splash-screen";
 import {BodoniModa_400Regular, BodoniModa_500Medium} from "@expo-google-fonts/bodoni-moda";
 import {useFonts} from "expo-font";
-
+import {GestureHandlerRootView} from "react-native-gesture-handler";
 export default function App() {
 
 
@@ -36,13 +36,15 @@ export default function App() {
         }
 
         if (fontsLoaded && appReady) hideSplashScreen();
-    }, [appReady])
+    }, [appReady, fontsLoaded])
 
-    if (!appReady) return null;
+    if (!appReady || !fontsLoaded) return null;
 
     return (
-        <MainNavigation>
-            <StatusBar style="auto"/>
-        </MainNavigation>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <MainNavigation>
+                <StatusBar style="auto"/>
+            </MainNavigation>
+        </GestureHandlerRootView>
     );
 }

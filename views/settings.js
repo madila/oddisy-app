@@ -31,8 +31,8 @@ const settingsStyle = StyleSheet.create({
     },
     innerContainer: {
         borderWidth: 1,
-        borderColor: 'black',
-        borderRadius: 10,
+        borderColor: Colors.grey,
+        borderRadius: 40,
         flex: 1,
         padding: 10,
         alignItems: 'center',
