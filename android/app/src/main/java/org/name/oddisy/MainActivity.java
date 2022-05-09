@@ -1,4 +1,4 @@
-package com.oddisy;
+package org.name.oddisy;
 
 import android.os.Build;
 import android.os.Bundle;
