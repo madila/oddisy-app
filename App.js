@@ -6,6 +6,8 @@ import * as SplashScreen from "expo-splash-screen";
 import {BodoniModa_400Regular, BodoniModa_500Medium} from "@expo-google-fonts/bodoni-moda";
 import {useFonts} from "expo-font";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
+
+
 export default function App() {
 
 
