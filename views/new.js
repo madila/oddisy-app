@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {Button, Platform, Pressable, Text, View} from "react-native";
-import {Colors} from "../styles/constants/colors";
-import {Fonts} from "../styles/constants/fonts";
+import {View} from "react-native";
 import {styles} from "../styles/layout";
+import Box from "./Box";
 import PanPinch from 'react-native-pan-pinch';
 
 const NewScreen = ({ navigation: { navigate } }) => {
@@ -14,24 +13,17 @@ const NewScreen = ({ navigation: { navigate } }) => {
         setDimensions([width, height]);
     }
 
-    return  <View
-        style={styles.container}>
-        <Text style={{color: Colors.offBlack, fontFamily: Fonts.regular, textAlign: 'center', fontSize: 30}}>Home</Text>
-        <View
-            style={{alignItems: 'center'}}
-            onLayout={handleLayout}
-        >
-            <PanPinch containerDimensions={dimensions}>
-                <Text style={styles.buttonTextPrimary}>Settings</Text>
+    return <View
+            style={[styles.container, {overflow: "hidden"}]}
+            onLayout={handleLayout}>
+            <PanPinch
+                minScale={1}
+                initialScale={1}
+                contentDimensions={{width: 2400, height: 1600}}
+                containerDimensions={dimensions}>
+                <Box/>
             </PanPinch>
-            <Pressable
-                style={styles.buttonPrimary}
-                onPress={() => { navigate('Settings') }}
-            >
-                <Text style={styles.buttonTextPrimary}>Settings</Text>
-            </Pressable>
         </View>
-    </View>
 }
 
 export default NewScreen;

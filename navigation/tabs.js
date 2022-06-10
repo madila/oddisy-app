@@ -6,7 +6,7 @@ import {Feather} from "@expo/vector-icons";
 import TaskScreen from "../views/tasks";
 import PlaygroundScreen from "../views/playground";
 import React from "react";
-import HomeScreen from "../views/home";
+import NewScreen from "../views/new";
 
 const Tab = createBottomTabNavigator();
 
@@ -55,7 +55,7 @@ const Tabs = (props) => {
                         return <Feather name="circle" size={18} color={Colors.offBlack} />
                     },
                 }}
-                name="Home" component={HomeScreen}/>
+                name="Home" component={NewScreen}/>
             <Tab.Screen
                 options={{
                     tabBarLabel: 'Journeys',
