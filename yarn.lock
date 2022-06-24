@@ -1579,6 +1579,13 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@openspacelabs/react-native-zoomable-view@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@openspacelabs/react-native-zoomable-view/-/react-native-zoomable-view-2.0.4.tgz#e907a9d68e9b48bd2934ed0354bd5b3eb958f575"
+  integrity sha512-/mtLvqpP99NdYsskD+e+mNivBY+y/JzufxS2GWHeJE6H4NF63jDAfuBFV2gVmr1YIF3clZGlXqdvuqLIOk/H4g==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@react-native-community/cli-debugger-ui@^7.0.3":
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-7.0.3.tgz#3eeeacc5a43513cbcae56e5e965d77726361bcb4"
@@ -3746,7 +3753,7 @@ css-select@^2.0.0:
     domutils "^1.7.0"
     nth-check "^1.0.2"
 
-css-select@^4.1.3:
+css-select@^4.1.3, css-select@^4.2.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-4.3.0.tgz#db7129b2846662fd8628cfc496abb2b59e41529b"
   integrity sha512-wPpOYtnsVontu2mODhA19JrqWxNsfdatRKd64kmpRbQgh1KtItko5sTnEpPdpSaJszTOhEMlF/RPz28qj4HqhQ==
@@ -3765,7 +3772,7 @@ css-tree@1.0.0-alpha.37:
     mdn-data "2.0.4"
     source-map "^0.6.1"
 
-css-tree@^1.1.2:
+css-tree@^1.0.0-alpha.39, css-tree@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.1.3.tgz#eb4870fb6fd7707327ec95c2ff2ab09b5e8db91d"
   integrity sha512-tRpdppF7TRazZrjJ6v3stzv93qxRcSsFmW6cX0Zm2NVKpxE1WV1HblnghVv9TreireHkqI/VDEsfolRF1p6y7Q==
@@ -8745,23 +8752,6 @@ react-native-gradle-plugin@^0.0.6:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.6.tgz#b61a9234ad2f61430937911003cddd7e15c72b45"
   integrity sha512-eIlgtsmDp1jLC24dRn43hB3kEcZVqx6DUQbR0N1ABXGnMEafm9I3V3dUUeD1vh+Dy5WqijSoEwLNUPLgu5zDMg==
 
-react-native-pan-pinch-view@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-pan-pinch-view/-/react-native-pan-pinch-view-1.0.1.tgz#9c8aff0f74ab3b74d839da655c2397011cb66410"
-  integrity sha512-gShQHJmWumuQXyBC/FVS9nf7in0UC+aFC8vzhGXnNNXje1Oc/7YY18qZl9w0oEwZJfJFraLKgahofDv79co8Cw==
-
-react-native-pan-pinch@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-pan-pinch/-/react-native-pan-pinch-1.0.1.tgz#132cbec4745f294caf0b5297e1a69af360898267"
-  integrity sha512-bfycicOeEM2py3cxMfN6s57ierE9QwB/ILcSsF+YibyPHZ2TZ1PGRka0+BYgaMBsZsHaTOo3WU+tO9yJWYWEUw==
-
-react-native-pinch-zoom-view-movable@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/react-native-pinch-zoom-view-movable/-/react-native-pinch-zoom-view-movable-0.2.1.tgz#28af946fa05566e774fe4ee5e53baf08cf086e3b"
-  integrity sha512-VFFwQuvzELB6XZThmKqsORXVhtdbUfuJj4LcMvqfMw50J+jB4VNmXt+2TzEwptetjCdnGtW+/zQ6VJVeGqeTmw==
-  dependencies:
-    prop-types "^15.6.0"
-
 react-native-reanimated@~2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.8.0.tgz#93c06ca84d91fb3865110b0857c49a24e316130e"
@@ -8796,6 +8786,14 @@ react-native-screens@~3.11.1:
   dependencies:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
+
+react-native-svg@12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.3.0.tgz#40f657c5d1ee366df23f3ec8dae76fd276b86248"
+  integrity sha512-ESG1g1j7/WLD7X3XRFTQHVv0r6DpbHNNcdusngAODIxG88wpTWUZkhcM3A2HJTb+BbXTFDamHv7FwtRKWQ/ALg==
+  dependencies:
+    css-select "^4.2.1"
+    css-tree "^1.0.0-alpha.39"
 
 react-native-web@0.17.7:
   version "0.17.7"

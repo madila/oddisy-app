@@ -7,6 +7,7 @@ import TaskScreen from "../views/tasks";
 import PlaygroundScreen from "../views/playground";
 import React from "react";
 import NewScreen from "../views/new";
+import ZoomView from "../views/zoomview";
 
 const Tab = createBottomTabNavigator();
 
@@ -47,7 +48,7 @@ const Tabs = (props) => {
                         return <Feather name="settings" size={18} color={Colors.offBlack} />
                     },
                 }}
-                name="Today" component={PlaygroundScreen}/>
+                name="Today" component={ZoomView}/>
             <Tab.Screen
                 options={{
                     tabBarLabel: 'Home',
